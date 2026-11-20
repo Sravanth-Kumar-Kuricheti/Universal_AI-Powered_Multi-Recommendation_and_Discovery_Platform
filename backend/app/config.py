@@ -32,11 +32,12 @@ class Settings(BaseSettings):
     DATABASE_URL: str = Field(default="sqlite:///./recomind.db")
 
     # CORS
-    FRONTEND_URL: str = Field(default="http://localhost:5173")
+    FRONTEND_URL: str = Field(default="https://universal-ai-powered-multi-recommen.vercel.app")
     ALLOWED_ORIGINS: List[str] = [
         "http://localhost:5173",
         "http://localhost:3000",
         "http://127.0.0.1:5173",
+        "https://universal-ai-powered-multi-recommen.vercel.app",
         "https://recomind-ai.vercel.app",
         "*"
     ]
