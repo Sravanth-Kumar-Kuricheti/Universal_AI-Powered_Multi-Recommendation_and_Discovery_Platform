@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 280" width="320" height="280">
+  <defs>
+    <linearGradient id="robotBody" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#E2E8F0" />
+    </linearGradient>
+    <linearGradient id="purpleAccent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#7C22F5" />
+      <stop offset="100%" stop-color="#A855F7" />
+    </linearGradient>
+    <linearGradient id="glowRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#C084FC" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#7C22F5" stop-opacity="0.1" />
+    </linearGradient>
+    <radialGradient id="auraGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#A855F7" stop-opacity="0.35" />
+      <stop offset="60%" stop-color="#7C22F5" stop-opacity="0.15" />
+      <stop offset="100%" stop-color="#0B1020" stop-opacity="0" />
+    </radialGradient>
+    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over" />
+    </filter>
+  </defs>
+
+  <!-- Purple Ambient Glow Aura -->
+  <circle cx="160" cy="140" r="130" fill="url(#auraGlow)" />
+
+  <!-- Floating Sparkles / Data Nodes -->
+  <circle cx="60" cy="80" r="3" fill="#C084FC" filter="url(#neonGlow)" />
+  <circle cx="270" cy="70" r="4" fill="#38BDF8" filter="url(#neonGlow)" />
+  <circle cx="45" cy="180" r="3" fill="#A855F7" />
+  <circle cx="280" cy="190" r="3.5" fill="#C084FC" filter="url(#neonGlow)" />
+  
+  <!-- Subtle orbital ring -->
+  <ellipse cx="160" cy="180" rx="110" ry="26" fill="none" stroke="url(#glowRing)" stroke-width="2" stroke-dasharray="8 6" transform="rotate(-8 160 180)" />
+
+  <!-- Floating Robot Base / Jet Hover effect -->
+  <ellipse cx="160" cy="225" rx="35" ry="8" fill="#38BDF8" filter="url(#neonGlow)" opacity="0.8" />
+  <polygon points="145,215 175,215 160,235" fill="url(#purpleAccent)" opacity="0.7" />
+
+  <!-- Robot Torso -->
+  <rect x="125" y="145" width="70" height="65" rx="20" fill="url(#robotBody)" stroke="#CBD5E1" stroke-width="2" />
+  <!-- Chest Core Badge -->
+  <circle cx="160" cy="175" r="14" fill="#0F172A" />
+  <circle cx="160" cy="175" r="10" fill="url(#purpleAccent)" filter="url(#neonGlow)" />
+  <polygon points="160,169 166,178 154,178" fill="#FFFFFF" />
+
+  <!-- Robot Arms -->
+  <!-- Left Arm waving -->
+  <path d="M 125 155 Q 95 140 85 115" stroke="url(#robotBody)" stroke-width="14" stroke-linecap="round" fill="none" />
+  <circle cx="85" cy="115" r="10" fill="url(#purpleAccent)" filter="url(#neonGlow)" />
+  <!-- Floating magic spark above hand -->
+  <polygon points="85,96 88,103 95,106 88,109 85,116 82,109 75,106 82,103" fill="#38BDF8" filter="url(#neonGlow)" />
+
+  <!-- Right Arm resting gracefully -->
+  <path d="M 195 155 Q 225 170 215 195" stroke="url(#robotBody)" stroke-width="14" stroke-linecap="round" fill="none" />
+  <circle cx="215" cy="195" r="9" fill="url(#purpleAccent)" />
+
+  <!-- Neck -->
+  <rect x="150" y="133" width="20" height="15" rx="4" fill="#64748B" />
+
+  <!-- Robot Head -->
+  <!-- Antenna -->
+  <line x1="160" y1="58" x2="160" y2="75" stroke="#94A3B8" stroke-width="4" stroke-linecap="round" />
+  <circle cx="160" cy="54" r="8" fill="#38BDF8" filter="url(#neonGlow)" />
+
+  <!-- Head Chassis -->
+  <rect x="110" y="70" width="100" height="70" rx="28" fill="url(#robotBody)" stroke="#E2E8F0" stroke-width="2" />
+  
+  <!-- Ear Headphones -->
+  <rect x="100" y="88" width="12" height="32" rx="6" fill="url(#purpleAccent)" />
+  <rect x="208" y="88" width="12" height="32" rx="6" fill="url(#purpleAccent)" />
+
+  <!-- Visor Screen -->
+  <rect x="120" y="80" width="80" height="48" rx="18" fill="#0A0E1A" stroke="#1E293B" stroke-width="1.5" />
+
+  <!-- Expressive Curved Eyes -->
+  <path d="M 136 102 Q 146 95 153 104" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" fill="none" filter="url(#neonGlow)" />
+  <path d="M 167 104 Q 174 95 184 102" stroke="#38BDF8" stroke-width="4" stroke-linecap="round" fill="none" filter="url(#neonGlow)" />
+
+  <!-- Cheerful Visor Smile -->
+  <path d="M 152 118 Q 160 123 168 118" stroke="#A855F7" stroke-width="2.5" stroke-linecap="round" fill="none" filter="url(#neonGlow)" />
+</svg>
